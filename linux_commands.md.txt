@@ -1,0 +1,130 @@
+# ===============================
+# Linux Commands Practice
+# Author: Muhammad Huzaifa Usman
+# Purpose: Core Linux commands from Beginner to Advanced
+# ===============================
+
+# ----------------------------
+# 1️⃣ File & Directory Commands
+# ----------------------------
+pwd                # Print current directory
+ls                 # List files & directories
+ls -l              # List files with details
+ls -a              # List all files including hidden
+cd /path/to/dir    # Change directory
+cd ~               # Go to home
+mkdir myfolder     # Create a folder
+mkdir -p folder1/folder2  # Nested folders
+rmdir folder       # Remove empty folder
+rm -r folder       # Remove folder with contents
+touch file.txt     # Create empty file
+cp file1 file2     # Copy file
+cp -r dir1 dir2    # Copy folder recursively
+mv old new         # Move/rename file
+rm file.txt        # Delete file
+rm -rf folder      # Force delete folder
+
+# ----------------------------
+# 2️⃣ File Content & Text Processing
+# ----------------------------
+cat file.txt          # Show file content
+tac file.txt          # Show content in reverse
+head file.txt         # First 10 lines
+tail file.txt         # Last 10 lines
+tail -f file.txt      # Follow file in real-time
+less file.txt         # Scrollable view
+wc file.txt           # Count lines, words, characters
+grep "pattern" file.txt  # Search text
+grep -i "pattern" file.txt  # Case-insensitive search
+grep -r "pattern" /dir     # Recursive search
+sort file.txt          # Sort lines
+uniq file.txt          # Remove duplicates
+diff file1 file2       # Compare files
+cmp file1 file2        # Compare byte by byte
+
+# ----------------------------
+# 3️⃣ User & Permission Management
+# ----------------------------
+whoami                   # Current user
+who                      # Logged in users
+id                       # User ID & groups
+groups                   # Groups of current user
+sudo command             # Run as root
+adduser newuser          # Add user
+deluser username         # Delete user
+passwd username          # Change password
+usermod -aG group user   # Add to group
+chmod 755 file           # Set permissions
+chmod -R 755 folder      # Recursive permissions
+chown user:group file    # Change owner
+chown -R user:group folder # Recursive ownership
+
+# ----------------------------
+# 4️⃣ Process & Job Management
+# ----------------------------
+ps aux                  # List processes
+top                     # Real-time monitor
+htop                    # Interactive monitor
+kill PID                # Kill process
+kill -9 PID             # Force kill
+jobs                    # List background jobs
+bg %1                    # Resume job in background
+fg %1                    # Bring job to foreground
+nice -n 10 command      # Start process with priority
+renice 5 -p PID         # Change running process priority
+
+# ----------------------------
+# 5️⃣ Disk & System Info
+# ----------------------------
+df -h                    # Disk usage
+du -h --max-depth=1       # Folder sizes
+free -h                   # Memory usage
+uptime                     # System uptime
+uname -a                   # Kernel info
+cat /etc/os-release        # OS info
+lsblk                      # List block devices
+blkid                      # Disk UUIDs
+
+# ----------------------------
+# 6️⃣ Networking Commands
+# ----------------------------
+ping google.com           # Check connectivity
+ifconfig                  # Network interfaces
+ip addr                   # Modern interface info
+netstat -tuln             # Listening ports
+ss -tuln                  # Modern netstat
+traceroute google.com     # Route to host
+nslookup google.com       # DNS lookup
+curl http://example.com   # Fetch webpage
+wget http://example.com/file.zip  # Download file
+scp file.txt user@host:/path     # Copy over SSH
+ssh user@host             # Remote login
+
+# ----------------------------
+# 7️⃣ Compression & Archiving
+# ----------------------------
+tar -czvf archive.tar.gz folder/   # Compress folder
+tar -xzvf archive.tar.gz           # Extract folder
+zip file.zip file.txt              # Zip file
+unzip file.zip                     # Unzip
+gzip file.txt                      # Compress
+gunzip file.txt.gz                 # Decompress
+
+# ----------------------------
+# 8️⃣ Shell & Scripting
+# ----------------------------
+echo "Hello World"                # Print text
+printf "Name: %s\n" "Huzaifa"    # Formatted print
+env                               # List environment variables
+printenv VAR                       # Show specific variable
+export VAR=value                   # Set variable
+alias ll='ls -la'                  # Alias command
+history                             # Command history
+!!                                  # Run last command
+chmod +x script.sh                 # Make script executable
+./script.sh                        # Run script
+crontab -e                          # Schedule cron jobs
+
+# ----------------------------
+# ✅ End of Core Linux Commands
+# ----------------------------

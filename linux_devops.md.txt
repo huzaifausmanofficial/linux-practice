@@ -1,0 +1,83 @@
+# ===============================
+# Linux for DevOps Practice
+# Author: Muhammad Huzaifa Usman
+# Purpose: Linux commands commonly used in DevOps workflows
+# ===============================
+
+# ----------------------------
+# 1️⃣ Git & Version Control
+# ----------------------------
+git init                      # Initialize repository
+git clone https://repo.git    # Clone repo
+git status                    # Check repo status
+git add file.txt               # Stage changes
+git commit -m "message"       # Commit changes
+git push origin main           # Push changes
+git pull origin main           # Pull updates
+git log                        # Commit history
+git diff                       # Show changes
+git branch                     # List branches
+git checkout branch            # Switch branch
+git merge branch               # Merge branch
+git remote -v                  # Show remote repos
+
+# ----------------------------
+# 2️⃣ Docker Commands
+# ----------------------------
+docker --version               # Check Docker version
+docker pull ubuntu             # Pull image
+docker images                  # List images
+docker ps                      # List containers
+docker run -it ubuntu bash     # Run container interactively
+docker stop container_id       # Stop container
+docker rm container_id         # Remove container
+docker rmi image_id            # Remove image
+docker build -t myimage .      # Build image
+docker exec -it container bash # Access running container
+
+# ----------------------------
+# 3️⃣ CI/CD (GitHub Actions / Automation)
+# ----------------------------
+# These are mostly YAML commands but Linux is used for scripts
+echo "Deploy script running"    # Example deployment log
+chmod +x deploy.sh              # Make deployment script executable
+./deploy.sh                     # Run deployment script
+
+# ----------------------------
+# 4️⃣ Cloud & Linux (AWS CLI)
+# ----------------------------
+aws --version                   # Check AWS CLI
+aws s3 ls                       # List S3 buckets
+aws s3 cp file.txt s3://bucket/ # Upload to S3
+aws ec2 describe-instances      # Show EC2 instances
+aws ec2 start-instances --ids i-123456 # Start instance
+aws ec2 stop-instances --ids i-123456  # Stop instance
+
+# ----------------------------
+# 5️⃣ System Automation
+# ----------------------------
+crontab -l                       # List cron jobs
+crontab -e                       # Edit cron jobs
+chmod +x script.sh               # Make script executable
+./script.sh                      # Run script
+ansible -m ping all              # Check ansible hosts (if installed)
+
+# ----------------------------
+# 6️⃣ Monitoring & Logs
+# ----------------------------
+tail -f /var/log/syslog          # Follow logs
+journalctl -xe                   # Systemd logs
+top                              # Monitor CPU/memory
+htop                             # Interactive monitor
+
+# ----------------------------
+# 7️⃣ Networking in DevOps
+# ----------------------------
+curl http://service/health       # Check service health
+ping 8.8.8.8                     # Connectivity test
+netstat -tuln                    # Open ports
+ss -tuln                         # Modern netstat
+
+# ----------------------------
+# ✅ End of DevOps Linux Commands
+# ----------------------------
