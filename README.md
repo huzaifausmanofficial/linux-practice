@@ -5,5 +5,5 @@ It is designed for hands-on practice and to showcase skills to potential employe
 
 ## Contents
 
-- [Linux Commands (Beginner → Advanced)](./linux_commands.md)  
-- [Linux Commands used in DevOps](./linux_devops.md)
+- [Linux Commands (Beginner → Advanced)](./linux_commands.md.txt)  
+- [Linux Commands used in DevOps](./linux_devops.md.txt)
